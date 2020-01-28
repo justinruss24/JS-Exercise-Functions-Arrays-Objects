@@ -269,7 +269,13 @@ function getOlderCars(inventory, y) {
 */
 function getGermanCars(inventory) {
   /* code here */
-
+  let germanCars = [];
+  for (var i = 0; i < inventory.length; i++){
+    if (inventory[i].car_make === 'Audi' || inventory[i].car_make === 'Mercedes-Benz' || inventory[i].car_make === 'Volkswagen' || inventory[i].car_make === 'BMW') {
+      germanCars.push(inventory[i])
+    }  
+  }
+  return germanCars;
 }
 
 /**
